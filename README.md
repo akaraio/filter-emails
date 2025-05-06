@@ -1,1 +1,3 @@
 # filter-emails
+
+The code loads a CSV file into a Pandas dataframe and preprocesses it for use in a binary classification task, where the goal is to classify text messages as either "ham" (spam-free) or "spam". It uses the Keras library to build a neural network model that takes input from text data, embeds the words into a vector space using an embedding layer, and then applies a series of convolutional and recurrent layers before outputting a probability that the message is spam. The code trains this model on the preprocessed training data using binary cross-entropy loss and Adam optimization, and saves the trained model to disk for future use.
